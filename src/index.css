@@ -17,10 +17,11 @@ code {
 }
 
 .product_card_body{
-  border: 1px solid grey;
+  border: 1px solid #8080806e;
   margin: 15px;
   box-shadow: 0 14px 26px rgba(0,0,0,0.04);
   transition: all 0.3s ease-out;
+  border-radius: 10px;
 }
 
 .product_card_body img{
@@ -56,4 +57,16 @@ code {
   right: 0;
   color: black;
   display: block;
+}
+.dark_mode{
+  background-color: black;
+  color: white;
+}
+.header_body_padding{
+  padding-top: 70px;
+}
+.shop_sidebar{
+  height: 50vh;
+  padding-top: 70px;
+  top: 3%;
 }

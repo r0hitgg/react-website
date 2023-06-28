@@ -20,6 +20,7 @@ export const productReducer = createSlice({
     name: 'products',
     initialState: {
         data: [],
+        categories: [],
     },
     reducers: {
         getData: (state, action) => {
@@ -28,7 +29,8 @@ export const productReducer = createSlice({
     },
     extraReducers: (builder) => {
         builder.addCase(fetchProducts.fulfilled, (state, action) => {
-            state.data = action.payload.result;
+            state.data = action.payload.result.products;
+            state.categories = action.payload.result.categories;
         })
     },
 });
